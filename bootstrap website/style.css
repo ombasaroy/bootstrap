@@ -1,0 +1,107 @@
+﻿/*styling the html doc and body section*/
+html, body{
+	/* This is reset style. This ensures that our landing scren takes the full height and width*/
+	height: 100%;
+	width: 100%;
+}
+.navbar{
+	background-color: #23415c;
+	/* 1% represents the top & bottom padding, 0 represnts the left & right */
+	padding: 1% 0; /* 1% Represents the top-bottom, 0 represents the left & right padding*/
+	font-size: 1.2em; /*Default font size for google is 16px */
+}
+
+.navbar-brand{
+	min-height: 55px;
+	padding: 0 15px 5px; /*T R B paddings. The 15px is so that other items dont overide the logo when flexed*/
+
+}
+
+.navbar-default .navbar-nav li a{
+	color: #d5d5d5;
+}
+
+/*Styling the active and hover color for the navigation links*/
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:active {
+	color: #fff;
+}
+
+
+/*LANDING PAGE*/
+#home{
+	background-image: url(img/mountains.jpeg); /*no-repeat center center fixed;*/
+	display: table;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+}
+
+.landing-text{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle
+}
+
+.landing-text h1{
+	font-size: 500%;
+	font-weight: bold;	
+}
+
+.padding {
+	padding: 80px 0; /* 80 = top & Bottom  0 = left and right*/
+}
+.padding img{
+	width: 100%; To keep the image contained to the width of the column
+}
+
+/*Fixed image scrolling effect*/
+#fixed{
+	background-image: url(img/background.jpg);
+	display: table;
+	height: 60%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+
+}
+
+footer{
+	width: 100%;
+	background-color: #23415c;
+	padding: 5% 5% 10% 5%;
+	color: white;
+}
+
+.fa{
+	padding: 15px;
+	font-size: 25px;
+	color: white;
+}
+.fa:hover{
+	color: #d5d5d5;
+	text-decoration: none;
+}
+
+.icon{
+	max-width: 200px;
+}
+
+@media (max-width: 768px){
+	.landing-text h1{
+		font-size: 300%;
+
+	}
+	.fa{
+		font-size: 20px;
+		padding: 10px;
+	}
+	.icon{
+		padding-top: 5%;
+		max-width: 100px 
+	}
+}
+
+
+
+
